@@ -31,3 +31,25 @@ The project demonstrates how modern applications integrate **structured transact
 | MongoDB Compass | MongoDB GUI |
 
 ---
+
+## 🏗 System Architecture
+
+MusicBrainz API
+      │
+      ▼
+ fetch_albums.py
+      │
+      ▼
+ albums.csv
+      │
+      ▼
+ PostgreSQL (Transactional Data)
+      │
+      ▼
+ Python Integration Scripts
+      │
+      ▼
+ MongoDB (Album Metadata + Activity Logs)
+
+
+---
