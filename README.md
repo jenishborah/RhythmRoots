@@ -1,4 +1,4 @@
-# 🎵 RhythmRoots – Hybrid E-Commerce Database System
+# RhythmRoots – Hybrid E-Commerce Database System
 
 A hybrid database system combining **PostgreSQL (Relational Database)** and **MongoDB (NoSQL Database)** to simulate a **music album e-commerce platform**.
 
@@ -6,7 +6,7 @@ The project demonstrates how modern applications integrate **structured transact
 
 ---
 
-## 🚀 Features
+## Features
 
 - Hybrid **SQL + NoSQL** architecture
 - **PostgreSQL** for transactional data 
@@ -19,7 +19,7 @@ The project demonstrates how modern applications integrate **structured transact
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|--------|
@@ -296,7 +296,7 @@ Provides **schema flexibility**.
 -----------------------------------------------------------------------
 
 
-## 📸 Project Screenshots
+## Project Screenshots
 
 ### PostgreSQL Tables
 
