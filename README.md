@@ -39,7 +39,6 @@ The project demonstrates how modern applications integrate **structured transact
 ![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
 ---
-# RhythmRoots -- Hybrid E-Commerce Database System
 
 ## Overview
 
