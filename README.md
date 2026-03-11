@@ -293,6 +293,27 @@ Handles:
 
 Provides **schema flexibility**.
 
+-----------------------------------------------------------------------
+
+
+## 📸 Project Screenshots
+
+### PostgreSQL Tables
+
+![PostgreSQL Tables](Screenshots/order_table.png)
+
+### MongoDB Collections
+
+![MongoDB](Screenshots/ActivityLogs_MongoDB.png)
+
+### Docker Containers
+
+![Docker](Screenshots/Docker_View.png)
+
+
+
+
+
 ------------------------------------------------------------------------
 
 # Author
