@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "RhythmRoots",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "rhythmroots",
+      "Username": "jenish",
+      "SSLMode": "prefer"
+    }
+  }
+}

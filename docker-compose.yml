@@ -1,0 +1,80 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: rhythmroots_postgres
+    restart: always
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      # persistent database storage
+      - postgres_data:/var/lib/postgresql/data
+
+      # auto-run SQL initialization scripts
+      - ./postgres-init:/docker-entrypoint-initdb.d
+
+    networks:
+      - rhythmroots_network
+
+
+  mongo:
+    image: mongo:7
+    container_name: rhythmroots_mongo
+    restart: always
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      # persistent mongo storage
+      - mongo_data:/data/db
+
+      # auto-run mongo init scripts
+      - ./mongo-init:/docker-entrypoint-initdb.d
+
+    networks:
+      - rhythmroots_network
+
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: rhythmroots_pgadmin
+    restart: always
+
+  environment:
+    PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+    PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+
+    ports:
+      - "5050:80"
+
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json
+
+    depends_on:
+      - postgres
+
+    networks:
+      - rhythmroots_network
+
+
+# Persistent storage volumes
+volumes:
+  postgres_data:
+  mongo_data:
+  pgadmin_data:
+
+
+# internal docker network
+networks:
+  rhythmroots_network:
