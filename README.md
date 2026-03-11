@@ -304,7 +304,7 @@ Provides **schema flexibility**.
 
 ### MongoDB Collections
 
-![MongoDB](Screenshots/ActivityLogs_MongoDB.png)
+![MongoDB](Screenshots/ActivityLogs_MonogoDB.png)
 
 ### Docker Containers
 
