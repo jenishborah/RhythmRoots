@@ -9,8 +9,8 @@ The project demonstrates how modern applications integrate **structured transact
 ## 🚀 Features
 
 - Hybrid **SQL + NoSQL** architecture
-- **PostgreSQL** for transactional data (Users, Albums, Orders)
-- **MongoDB** for flexible metadata (Descriptions, Reviews, Activity Logs)
+- **PostgreSQL** for transactional data 
+- **MongoDB** for flexible metadata 
 - **Docker-based deployment**
 - Automatic **database initialization**
 - Data ingestion using **MusicBrainz API**
