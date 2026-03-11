@@ -50,6 +50,13 @@ MusicBrainz API
       │
       ▼
  MongoDB (Album Metadata + Activity Logs)
+ 
+---
 
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Relational_DB-blue)
+![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-green)
+![Python](https://img.shields.io/badge/Python-3.x-yellow)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
 ---
